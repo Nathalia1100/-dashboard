@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Inventario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="header" role="banner">
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="search-container">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Buscar en el sistema..." aria-label="Buscar en el sistema">
+            </div>
+            <div class="user-actions">
+                <div class="notification-badge" aria-label="Notificaciones">
+                    <i class="fas fa-bell" aria-hidden="true"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar" aria-hidden="true">JS</div>
+                    <span class="user-name">Juan Carrillo</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </div> </div>
+        </header>
+        <aside class="sidebar" role="navigation" aria-label="Menú principal">
+            <div class="logo-container">
+                <div class="logo" aria-hidden="true">
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <div class="logo-text">InventarioPro</div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                        <span class="nav-text">Dashboard</span>
+                    </a> </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-box" aria-hidden="true"></i>
+                        <span class="nav-text">Productos</span>
+                    </a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-list-alt" aria-hidden="true"></i>
+                        <span class="nav-text">Categorías</span>
+                    </a> </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-truck" aria-hidden="true"></i>
+                        <span class="nav-text">Proveedores</span>
+                    </a> </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                        <span class="nav-text">Reportes</span>
+                    </a> </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog" aria-hidden="true"></i>
+                        <span class="nav-text">Configuración</span>
+                    </a> </li> </ul> </aside>
+        <main class="main" role="main">
+            <h1 class="section-title">Dashboard de Inventario</h1>
+            
+            <div class="summary-cards">
+                <div class="card card-1">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Total de Productos</div>
+                            <div class="card-value">1,248</div>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fas fa-boxes" aria-hidden="true"></i>
+                        </div> </div>
+                    <div class="card-trend trend-up">
+                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                        <span>10% desde el mes pasado</span>
+                    </div></div>
+                
+                <div class="card card-2">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Productos con Stock Bajo</div>
+                            <div class="card-value">42</div>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                        </div>  </div>
+                    <div class="card-trend trend-down">
+                        <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                        <span>5% desde el mes pasado</span>
+                    </div> </div>
+                
+                <div class="card card-3">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Valor Total de Inventario</div>
+                            <div class="card-value">$250.000</div>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+                        </div> </div>
+                    <div class="card-trend trend-up">
+                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                        <span>5.2% desde el mes pasado</span>
+                    </div> </div>
+                
+                <div class="card card-4">
+                    <div class="card-header">
+                        <div>
+                            <div class="card-title">Categorías de Productos</div>
+                            <div class="card-value">16</div>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fas fa-tags" aria-hidden="true"></i>
+                        </div> </div>
+                    <div class="card-trend">
+                        <i class="fas fa-minus" aria-hidden="true"></i>
+                        <span>Sin cambios</span>
+                    </div> </div> </div>
+            <div class="charts-container">
+                <div class="chart">
+                    <div class="chart-header">
+                        <h2 class="chart-title">Ventas Mensuales</h2>
+                        <div class="chart-actions">
+                            <button class="btn btn-outline">Mes</button>
+                            <button class="btn btn-primary">Año</button>
+                        </div> </div>
+                    <div class="chart-placeholder">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        <span>Gráfico de ventas mensuales</span>
+                    </div> </div>
+                
+                <div class="chart">
+                    <div class="chart-header">
+                        <h2 class="chart-title">Distribución de Categorías</h2>
+                        <div class="chart-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-download" aria-hidden="true"></i>
+                            </button>  </div> </div>
+                    <div class="chart-placeholder">
+                        <i class="fas fa-chart-pie" aria-hidden="true"></i>
+                        <span>Gráfico circular de categorías</span>
+                    </div> </div> </div>
+            <div class="data-table">
+                <div class="table-header">
+                    <h2 class="chart-title">Productos con Stock Bajo</h2>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                        Agregar Producto
+                    </button> </div>
+                
+                <table aria-label="Productos con stock bajo">
+                    <thead> <tr>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Stock Actual</th>
+                            <th>Stock Mínimo</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr> </thead><tbody> <tr>
+                            <td>Monitor LED 24"</td>
+                            <td>Tecnología</td>
+                            <td>5</td>
+                            <td>10</td>
+                            <td><span class="status status-lowstock">Stock Bajo</span></td> <td>
+                                <button class="action-btn" aria-label="Editar producto">
+                                    <i class="fas fa-edit" aria-hidden="true"></i>
+                                </button>
+                                <button class="action-btn" aria-label="Ver detalles">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button> </td> </tr> <tr>
+                            <td>Teclado Pro</td>
+                            <td>Tecnología</td>
+                            <td>3</td>
+                            <td>15</td>
+                            <td><span class="status status-lowstock">Stock Bajo</span></td><td>
+                                <button class="action-btn" aria-label="Editar producto">
+                                    <i class="fas fa-edit" aria-hidden="true"></i>
+                                </button>
+                                <button class="action-btn" aria-label="Ver detalles">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button></td></tr>  <tr>
+                            <td>Silla Ergonómica para Escritorio</td>
+                            <td>Muebles</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td><span class="status status-outofstock">Agotándose</span></td> <td>
+                                <button class="action-btn" aria-label="Editar producto">
+                                    <i class="fas fa-edit" aria-hidden="true"></i>
+                                </button>
+                                <button class="action-btn" aria-label="Ver detalles">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button>
+                            </td> </tr>  <tr>
+                            <td>Router WiFi</td>
+                            <td>Redes</td>
+                            <td>4</td>
+                            <td>8</td>
+                            <td><span class="status status-lowstock">Stock Bajo</span></td> <td>
+                                <button class="action-btn" aria-label="Editar producto">
+                                    <i class="fas fa-edit" aria-hidden="true"></i>
+                                </button>
+                                <button class="action-btn" aria-label="Ver detalles">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button> </td> </tr> <tr>
+                            <td>Impresora Laser</td>
+                            <td>Oficina</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td><span class="status status-instock">En Stock</span></td>
+                            <td>
+                                <button class="action-btn" aria-label="Editar producto">
+                                    <i class="fas fa-edit" aria-hidden="true"></i>
+                                </button>
+                                <button class="action-btn" aria-label="Ver detalles">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button> </td> </tr> </tbody> </table> </div>  </main>
+        <footer class="footer" role="contentinfo">
+            <p>&copy; 2024 Sistema de Gestión de Inventario - Todos los derechos reservados</p>
+        </footer> </div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+        document.addEventListener('click', function(event) {
+            const sidebar = document.querySelector('.sidebar');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (window.innerWidth < 992 && 
+                !sidebar.contains(event.target) && 
+                !menuToggle.contains(event.target) &&
+                sidebar.classList.contains('active')) {
+                sidebar.classList.remove('active');
+            }
+        });
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 15px rgba(0, 0, 0, 0.2)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            });
+        });

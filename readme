@@ -1,0 +1,18 @@
+
+Es un dashboard administrativo para visualizar y gestionar un inventario. Incluye tarjetas de resumen, gráficos (placeholders) y una tabla con productos de bajo stock. Es **responsivo**.
+
+## 🚀 Tecnologías usadas
+- **HTML5** → estructura semántica  
+- **CSS3** → grid, flexbox, media queries y variables  
+- **JavaScript** → menú lateral y animaciones  
+- **Font Awesome** → íconos  
+
+## 🎨 Diseño y accesibilidad
+- Colores modernos en tonos azules.  
+- Tarjetas con iconos para leer datos rápido.  
+- Uso de etiquetas semánticas y atributos `aria` para accesibilidad.  
+
+## ▶️ Cómo probarlo
+1. Descarga los archivos.  
+2. Abre `index.html` en tu navegador.  
+3. Cambia el tamaño de la ventana para ver el diseño.  
